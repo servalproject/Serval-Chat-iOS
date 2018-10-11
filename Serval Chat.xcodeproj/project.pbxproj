@@ -1,0 +1,558 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5FF09BE6A6BAD2C459925893 /* Pods_Serval_Chat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 757ECE5FDB554242E6A5066B /* Pods_Serval_Chat.framework */; };
+		AC0D6211213D045B00BBD0C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC0D6210213D045B00BBD0C4 /* Assets.xcassets */; };
+		AC144C0E2182BE4F00E9D2DD /* serval.conf in Resources */ = {isa = PBXBuildFile; fileRef = AC144C0D2182BE4F00E9D2DD /* serval.conf */; };
+		AC38A06F214F4375003A47EF /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC38A06E214F4375003A47EF /* Message.swift */; };
+		AC38A073214F506F003A47EF /* CustomMessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC38A071214F506F003A47EF /* CustomMessageCell.swift */; };
+		AC38A076214F6015003A47EF /* MessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC38A075214F6015003A47EF /* MessageCell.xib */; };
+		AC43326821649108009B15E3 /* ContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC43326721649108009B15E3 /* ContactsViewController.swift */; };
+		AC43326A2164940F009B15E3 /* OneToOneMessagingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4332692164940F009B15E3 /* OneToOneMessagingViewController.swift */; };
+		AC5345FD214F7653004B9DBD /* MeshMB.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5345FC214F7653004B9DBD /* MeshMB.swift */; };
+		AC813A98216F087200BE7787 /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC813A97216F087200BE7787 /* Contact.swift */; };
+		ACABAFA7216ADB0700DF3DDE /* MoreSettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACABAFA6216ADB0700DF3DDE /* MoreSettingsTableViewController.swift */; };
+		ACABAFA9216B066300DF3DDE /* MeshMS.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACABAFA8216B066300DF3DDE /* MeshMS.swift */; };
+		ACABAFAB216B10B000DF3DDE /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACABAFAA216B10B000DF3DDE /* Route.swift */; };
+		ACE3DFA0213786C100E4B454 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE3DF9F213786C100E4B454 /* AppDelegate.swift */; };
+		ACE3DFA5213786C100E4B454 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACE3DFA3213786C100E4B454 /* Main.storyboard */; };
+		ACE3DFAA213786C300E4B454 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACE3DFA8213786C300E4B454 /* LaunchScreen.storyboard */; };
+		ACE3DFB22137870E00E4B454 /* serval-dna.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = ACE3DFB12137870D00E4B454 /* serval-dna.xcconfig */; };
+		ACE3DFBB2137877B00E4B454 /* CliContextFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE3DFB52137877A00E4B454 /* CliContextFile.swift */; };
+		ACE3DFBC2137877B00E4B454 /* log_output.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE3DFB62137877A00E4B454 /* log_output.swift */; };
+		ACE3DFBD2137877B00E4B454 /* CliContextArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE3DFB72137877A00E4B454 /* CliContextArray.swift */; };
+		ACE3DFBE2137877B00E4B454 /* CliContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE3DFB82137877A00E4B454 /* CliContext.swift */; };
+		ACE3DFBF2137877B00E4B454 /* commandline.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE3DFB92137877A00E4B454 /* commandline.swift */; };
+		ACE3DFC02137877B00E4B454 /* log.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE3DFBA2137877B00E4B454 /* log.swift */; };
+		ACE3DFC22137882700E4B454 /* ServalD.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE3DFC12137882700E4B454 /* ServalD.swift */; };
+		ACE3DFC5213789C600E4B454 /* Keyring.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE3DFC4213789C600E4B454 /* Keyring.swift */; };
+		ACE3DFC721378BD000E4B454 /* IdentityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE3DFC621378BD000E4B454 /* IdentityViewController.swift */; };
+		ACE3DFCB21381CA800E4B454 /* Identity.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE3DFCA21381CA800E4B454 /* Identity.swift */; };
+		ACF21657213D05F400DDF359 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF21656213D05F400DDF359 /* FeedViewController.swift */; };
+		ACFB8692216ED385007A34B9 /* MenuTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFB8691216ED385007A34B9 /* MenuTabController.swift */; };
+		ACFB8694216ED668007A34B9 /* Conversation.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFB8693216ED668007A34B9 /* Conversation.swift */; };
+		ACFD271C219CEAA100D0D9C1 /* Rhizome.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFD271B219CEAA100D0D9C1 /* Rhizome.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		43EFC5E381C3413B7CD08401 /* Pods-Serval Chat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Serval Chat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Serval Chat/Pods-Serval Chat.debug.xcconfig"; sourceTree = "<group>"; };
+		757ECE5FDB554242E6A5066B /* Pods_Serval_Chat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Serval_Chat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		91E59A275EE771DF7B300D96 /* Pods-Serval Chat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Serval Chat.release.xcconfig"; path = "Pods/Target Support Files/Pods-Serval Chat/Pods-Serval Chat.release.xcconfig"; sourceTree = "<group>"; };
+		AC0D6210213D045B00BBD0C4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AC144C0D2182BE4F00E9D2DD /* serval.conf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = serval.conf; sourceTree = "<group>"; };
+		AC38A06E214F4375003A47EF /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		AC38A071214F506F003A47EF /* CustomMessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomMessageCell.swift; sourceTree = "<group>"; };
+		AC38A075214F6015003A47EF /* MessageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MessageCell.xib; sourceTree = "<group>"; };
+		AC43326721649108009B15E3 /* ContactsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsViewController.swift; sourceTree = "<group>"; };
+		AC4332692164940F009B15E3 /* OneToOneMessagingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneToOneMessagingViewController.swift; sourceTree = "<group>"; };
+		AC5345FC214F7653004B9DBD /* MeshMB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeshMB.swift; sourceTree = "<group>"; };
+		AC813A97216F087200BE7787 /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
+		ACABAFA6216ADB0700DF3DDE /* MoreSettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreSettingsTableViewController.swift; sourceTree = "<group>"; };
+		ACABAFA8216B066300DF3DDE /* MeshMS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeshMS.swift; sourceTree = "<group>"; };
+		ACABAFAA216B10B000DF3DDE /* Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
+		ACE3DF9C213786C100E4B454 /* Serval Chat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Serval Chat.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACE3DF9F213786C100E4B454 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		ACE3DFA4213786C100E4B454 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		ACE3DFA9213786C300E4B454 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		ACE3DFAB213786C300E4B454 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ACE3DFB12137870D00E4B454 /* serval-dna.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "serval-dna.xcconfig"; path = "../../../../serval-dna/ios/frameworks/serval-dna.xcconfig"; sourceTree = "<group>"; };
+		ACE3DFB52137877A00E4B454 /* CliContextFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CliContextFile.swift; sourceTree = "<group>"; };
+		ACE3DFB62137877A00E4B454 /* log_output.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = log_output.swift; sourceTree = "<group>"; };
+		ACE3DFB72137877A00E4B454 /* CliContextArray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CliContextArray.swift; sourceTree = "<group>"; };
+		ACE3DFB82137877A00E4B454 /* CliContext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CliContext.swift; sourceTree = "<group>"; };
+		ACE3DFB92137877A00E4B454 /* commandline.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = commandline.swift; sourceTree = "<group>"; };
+		ACE3DFBA2137877B00E4B454 /* log.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = log.swift; sourceTree = "<group>"; };
+		ACE3DFC12137882700E4B454 /* ServalD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServalD.swift; sourceTree = "<group>"; };
+		ACE3DFC4213789C600E4B454 /* Keyring.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keyring.swift; sourceTree = "<group>"; };
+		ACE3DFC621378BD000E4B454 /* IdentityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdentityViewController.swift; sourceTree = "<group>"; };
+		ACE3DFCA21381CA800E4B454 /* Identity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Identity.swift; sourceTree = "<group>"; };
+		ACF21656213D05F400DDF359 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		ACFB8691216ED385007A34B9 /* MenuTabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTabController.swift; sourceTree = "<group>"; };
+		ACFB8693216ED668007A34B9 /* Conversation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Conversation.swift; sourceTree = "<group>"; };
+		ACFD271B219CEAA100D0D9C1 /* Rhizome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rhizome.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ACE3DF99213786C100E4B454 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5FF09BE6A6BAD2C459925893 /* Pods_Serval_Chat.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		02346D320DB12F5DB40CBDB9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				757ECE5FDB554242E6A5066B /* Pods_Serval_Chat.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AC38A070214F502F003A47EF /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				AC38A06E214F4375003A47EF /* Message.swift */,
+				AC38A071214F506F003A47EF /* CustomMessageCell.swift */,
+				AC38A075214F6015003A47EF /* MessageCell.xib */,
+			);
+			path = Message;
+			sourceTree = "<group>";
+		};
+		ACA6FD1B218BE40C0008E8DC /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				ACE3DFC621378BD000E4B454 /* IdentityViewController.swift */,
+				AC43326721649108009B15E3 /* ContactsViewController.swift */,
+				AC4332692164940F009B15E3 /* OneToOneMessagingViewController.swift */,
+				ACABAFA6216ADB0700DF3DDE /* MoreSettingsTableViewController.swift */,
+				ACF21656213D05F400DDF359 /* FeedViewController.swift */,
+				ACFB8691216ED385007A34B9 /* MenuTabController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		ACABAFAC216B11B000DF3DDE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				ACE3DFCA21381CA800E4B454 /* Identity.swift */,
+				AC813A97216F087200BE7787 /* Contact.swift */,
+				ACFB8693216ED668007A34B9 /* Conversation.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		ACE3DF93213786C100E4B454 = {
+			isa = PBXGroup;
+			children = (
+				ACE3DFB12137870D00E4B454 /* serval-dna.xcconfig */,
+				ACE3DF9E213786C100E4B454 /* Serval Chat */,
+				ACE3DF9D213786C100E4B454 /* Products */,
+				FF366BFD799939A0EB65C396 /* Pods */,
+				02346D320DB12F5DB40CBDB9 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		ACE3DF9D213786C100E4B454 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ACE3DF9C213786C100E4B454 /* Serval Chat.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ACE3DF9E213786C100E4B454 /* Serval Chat */ = {
+			isa = PBXGroup;
+			children = (
+				AC144C0D2182BE4F00E9D2DD /* serval.conf */,
+				ACE3DFB32137875A00E4B454 /* CLI */,
+				ACE3DF9F213786C100E4B454 /* AppDelegate.swift */,
+				ACE3DFC12137882700E4B454 /* ServalD.swift */,
+				ACABAFAC216B11B000DF3DDE /* Model */,
+				ACE3DFC32137899800E4B454 /* Network */,
+				AC38A070214F502F003A47EF /* Message */,
+				ACA6FD1B218BE40C0008E8DC /* ViewController */,
+				ACE3DFA3213786C100E4B454 /* Main.storyboard */,
+				ACE3DFA8213786C300E4B454 /* LaunchScreen.storyboard */,
+				ACE3DFAB213786C300E4B454 /* Info.plist */,
+				AC0D6210213D045B00BBD0C4 /* Assets.xcassets */,
+			);
+			path = "Serval Chat";
+			sourceTree = "<group>";
+		};
+		ACE3DFB32137875A00E4B454 /* CLI */ = {
+			isa = PBXGroup;
+			children = (
+				ACE3DFB82137877A00E4B454 /* CliContext.swift */,
+				ACE3DFB72137877A00E4B454 /* CliContextArray.swift */,
+				ACE3DFB52137877A00E4B454 /* CliContextFile.swift */,
+				ACE3DFB92137877A00E4B454 /* commandline.swift */,
+				ACE3DFB62137877A00E4B454 /* log_output.swift */,
+				ACE3DFBA2137877B00E4B454 /* log.swift */,
+			);
+			path = CLI;
+			sourceTree = "<group>";
+		};
+		ACE3DFC32137899800E4B454 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				ACE3DFC4213789C600E4B454 /* Keyring.swift */,
+				AC5345FC214F7653004B9DBD /* MeshMB.swift */,
+				ACABAFA8216B066300DF3DDE /* MeshMS.swift */,
+				ACABAFAA216B10B000DF3DDE /* Route.swift */,
+				ACFD271B219CEAA100D0D9C1 /* Rhizome.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		FF366BFD799939A0EB65C396 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				43EFC5E381C3413B7CD08401 /* Pods-Serval Chat.debug.xcconfig */,
+				91E59A275EE771DF7B300D96 /* Pods-Serval Chat.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ACE3DF9B213786C100E4B454 /* Serval Chat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ACE3DFAE213786C300E4B454 /* Build configuration list for PBXNativeTarget "Serval Chat" */;
+			buildPhases = (
+				B02A7DCAB4519A5BB7186E65 /* [CP] Check Pods Manifest.lock */,
+				ACE3DF98213786C100E4B454 /* Sources */,
+				ACE3DF99213786C100E4B454 /* Frameworks */,
+				ACE3DF9A213786C100E4B454 /* Resources */,
+				902ED49D27C6F6E803E43F64 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Serval Chat";
+			productName = "Serval Chat";
+			productReference = ACE3DF9C213786C100E4B454 /* Serval Chat.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ACE3DF94213786C100E4B454 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Alexandre Dorys-Charnalet";
+				TargetAttributes = {
+					ACE3DF9B213786C100E4B454 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+				};
+			};
+			buildConfigurationList = ACE3DF97213786C100E4B454 /* Build configuration list for PBXProject "Serval Chat" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ACE3DF93213786C100E4B454;
+			productRefGroup = ACE3DF9D213786C100E4B454 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ACE3DF9B213786C100E4B454 /* Serval Chat */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ACE3DF9A213786C100E4B454 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACE3DFAA213786C300E4B454 /* LaunchScreen.storyboard in Resources */,
+				AC38A076214F6015003A47EF /* MessageCell.xib in Resources */,
+				ACE3DFA5213786C100E4B454 /* Main.storyboard in Resources */,
+				AC0D6211213D045B00BBD0C4 /* Assets.xcassets in Resources */,
+				AC144C0E2182BE4F00E9D2DD /* serval.conf in Resources */,
+				ACE3DFB22137870E00E4B454 /* serval-dna.xcconfig in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		902ED49D27C6F6E803E43F64 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Serval Chat/Pods-Serval Chat-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Avatar/Avatar.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Avatar.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Serval Chat/Pods-Serval Chat-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B02A7DCAB4519A5BB7186E65 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Serval Chat-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ACE3DF98213786C100E4B454 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC38A073214F506F003A47EF /* CustomMessageCell.swift in Sources */,
+				ACE3DFC22137882700E4B454 /* ServalD.swift in Sources */,
+				ACFB8694216ED668007A34B9 /* Conversation.swift in Sources */,
+				ACABAFA7216ADB0700DF3DDE /* MoreSettingsTableViewController.swift in Sources */,
+				AC813A98216F087200BE7787 /* Contact.swift in Sources */,
+				ACE3DFBE2137877B00E4B454 /* CliContext.swift in Sources */,
+				ACABAFA9216B066300DF3DDE /* MeshMS.swift in Sources */,
+				ACE3DFBD2137877B00E4B454 /* CliContextArray.swift in Sources */,
+				AC43326821649108009B15E3 /* ContactsViewController.swift in Sources */,
+				AC5345FD214F7653004B9DBD /* MeshMB.swift in Sources */,
+				ACE3DFBC2137877B00E4B454 /* log_output.swift in Sources */,
+				ACE3DFA0213786C100E4B454 /* AppDelegate.swift in Sources */,
+				ACE3DFBF2137877B00E4B454 /* commandline.swift in Sources */,
+				ACABAFAB216B10B000DF3DDE /* Route.swift in Sources */,
+				ACFD271C219CEAA100D0D9C1 /* Rhizome.swift in Sources */,
+				ACE3DFCB21381CA800E4B454 /* Identity.swift in Sources */,
+				ACE3DFC02137877B00E4B454 /* log.swift in Sources */,
+				ACE3DFBB2137877B00E4B454 /* CliContextFile.swift in Sources */,
+				AC38A06F214F4375003A47EF /* Message.swift in Sources */,
+				AC43326A2164940F009B15E3 /* OneToOneMessagingViewController.swift in Sources */,
+				ACFB8692216ED385007A34B9 /* MenuTabController.swift in Sources */,
+				ACE3DFC5213789C600E4B454 /* Keyring.swift in Sources */,
+				ACF21657213D05F400DDF359 /* FeedViewController.swift in Sources */,
+				ACE3DFC721378BD000E4B454 /* IdentityViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		ACE3DFA3213786C100E4B454 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ACE3DFA4213786C100E4B454 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		ACE3DFA8213786C300E4B454 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ACE3DFA9213786C300E4B454 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		ACE3DFAC213786C300E4B454 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ACE3DFB12137870D00E4B454 /* serval-dna.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		ACE3DFAD213786C300E4B454 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ACE3DFB12137870D00E4B454 /* serval-dna.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ACE3DFAF213786C300E4B454 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 43EFC5E381C3413B7CD08401 /* Pods-Serval Chat.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N2U26FVUB7;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = "Serval Chat/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				"OTHER_SWIFT_FLAGS[sdk=iphonesimulator*]" = "-D IOS_SIMULATOR";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.AlexandreDorysC.Serval-Chat";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		ACE3DFB0213786C300E4B454 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 91E59A275EE771DF7B300D96 /* Pods-Serval Chat.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N2U26FVUB7;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = "Serval Chat/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				"OTHER_SWIFT_FLAGS[sdk=iphonesimulator*]" = "-D IOS_SIMULATOR";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.AlexandreDorysC.Serval-Chat";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ACE3DF97213786C100E4B454 /* Build configuration list for PBXProject "Serval Chat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACE3DFAC213786C300E4B454 /* Debug */,
+				ACE3DFAD213786C300E4B454 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ACE3DFAE213786C300E4B454 /* Build configuration list for PBXNativeTarget "Serval Chat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACE3DFAF213786C300E4B454 /* Debug */,
+				ACE3DFB0213786C300E4B454 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ACE3DF94213786C100E4B454 /* Project object */;
+}
